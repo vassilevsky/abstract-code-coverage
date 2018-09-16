@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Software project test coverage information",
+  "type": "object",
+  "required": [
+    "project",
+    "revision",
+    "files"
+  ],
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Project name"
+    },
+    "revision": {
+      "type": "string",
+      "description": "Project revision for which this coverage information was gathered"
+    },
+    "files": {
+      "type": "array",
+      "description": "A list of project files with their coverage information",
+      "items": {"$ref": "#/definitions/file"}
+    }
+  },
+  "definitions": {
+    "file": {
+      "type": "object",
+      "required": [
+        "path",
+        "lines"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Path to file relative to project root"
+        },
+        "lines": {
+          "type": "array",
+          "description": "A ist of file lines with their coverage information",
+          "items": {"$ref": "#/definitions/line"},
+          "minItems": 1
+        }
+      }
+    },
+    "line": {
+      "type": "object",
+      "required": [
+        "no",
+        "hits"
+      ],
+      "properties": {
+        "no": {
+          "type": "integer",
+          "description": "Line number, starting from 1"
+        },
+        "hits": {
+          "type": "integer",
+          "description": "Number of times this line has been executed during this coverage information gathering session"
+        }
+      }
+    }
+  }
+}

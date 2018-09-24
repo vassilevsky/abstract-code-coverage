@@ -56,6 +56,35 @@
         "hits": {
           "type": "integer",
           "description": "Number of times this line has been executed during this coverage information gathering session"
+        },
+        "branches": {
+          "type": "array",
+          "description": "Branch coverage information",
+          "items": {"$ref": "#/definitions/branch"},
+          "minItems": 2
+        }
+      }
+    },
+    "branch": {
+      "type": "object",
+      "required": [
+        "id",
+        "from",
+        "to",
+        "hits"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "from": {
+          "type": "integer"
+        },
+        "to": {
+          "type": "integer"
+        },
+        "hits": {
+          "type": "integer"
         }
       }
     }

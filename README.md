@@ -79,3 +79,4 @@ Cons:
 
 * Help OpenCov to support this format
   * Write an opencov client gem to replace coveralls (which is just not cool to piggyback on)
+* Write a renderer to a standalone nice-looking project coverage report

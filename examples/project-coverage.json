@@ -3,8 +3,8 @@
         {"no": 1, "hits": 0},
         {"no": 2, "hits": 1},
         {"no": 3, "hits": 1, "branches": [
-            {"id": 1, "from": 10, "to": 22, "hits": 0},
-            {"id": 2, "from": 25, "to": 50, "hits": 1}
+            {"id": "1", "from": 10, "to": 22, "hits": 0},
+            {"id": "2", "from": 25, "to": 50, "hits": 1}
         ]}
     ]}
 ]}

@@ -18,7 +18,6 @@ Examples are in [examples](examples) directory.
 
 ## Implementations
 
-* OpenCov (TODO as the main open source coverage information server)
 * _Add your own implementation here via a pull request_
 
 ## Related projects

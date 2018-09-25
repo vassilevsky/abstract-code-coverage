@@ -66,6 +66,16 @@ Cons:
 
 * Too compact
 
+### CodeClimate
+
+Pros:
+
+* Seems to be widely supported
+
+Cons:
+
+* Doesn't have an easily discoverable schema or even an example
+
 ## TODO
 
 * Help OpenCov to support this format

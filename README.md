@@ -10,6 +10,12 @@ An open, extensive, JSON Schema-specified format of software source code test co
 * Support for branch coverage information
 * No need of access to source code to render a nice-looking coverage report
 
+## The Schema
+
+The schema is in [abstract-coverage-schema.json](abstract-coverage-schema.json). This is the main artifact of this project.
+
+Examples are in [examples](examples) directory.
+
 ## Implementations
 
 * OpenCov (TODO as the main open source coverage information server)

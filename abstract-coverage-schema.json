@@ -67,6 +67,7 @@
     },
     "branch": {
       "type": "object",
+      "description": "A distinct branch of code execution",
       "required": [
         "id",
         "from",
@@ -75,16 +76,20 @@
       ],
       "properties": {
         "id": {
-          "type": "string"
+          "type": "string",
+          "description": "Some branch identifier. Global in scope of file. Could be useful to highlight the same branch of execution in several lines of code."
         },
         "from": {
-          "type": "integer"
+          "type": "integer",
+          "description": "The position (starting from 1) of the first character of the branch in the line"
         },
         "to": {
-          "type": "integer"
+          "type": "integer",
+          "description": "The position (starting from 1) of the last character of the branch in the line"
         },
         "hits": {
-          "type": "integer"
+          "type": "integer",
+          "description": "Number of times this branch has been executed during this coverage information gathering session"
         }
       }
     }

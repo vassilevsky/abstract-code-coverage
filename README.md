@@ -1,6 +1,6 @@
 # Abstract Code Coverage Format
 
-An open, extensive, JSON Schema-specified format of software source code coverage information.
+An open, extensive, [JSON Schema](http://json-schema.org)-specified format of software source code coverage information.
 
 ## Features
 
@@ -13,8 +13,9 @@ An open, extensive, JSON Schema-specified format of software source code coverag
 ## The Schema
 
 The schema is in [abstract-coverage-schema.json](abstract-coverage-schema.json). This is the main artifact of this project.
+It is validated agaist the [metaschema](http://json-schema.org/specification.html#meta-schemas) on [Travis](https://travis-ci.org) on every push.
 
-Examples are in [examples](examples) directory.
+Examples are in [examples](examples) directory. They are validated against this schema.
 
 ## Implementations
 
@@ -77,6 +78,7 @@ Cons:
 
 ## TODO
 
-* Help OpenCov to support this format
+* Help OpenCov support this format
   * Write an opencov client gem to replace coveralls (which is just not cool to piggyback on)
 * Write a renderer to a standalone nice-looking project coverage report
+* Port [Makefile](Makefile) to Windows

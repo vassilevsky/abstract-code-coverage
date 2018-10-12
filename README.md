@@ -1,12 +1,12 @@
 # Abstract Code Coverage Format
 
-An open, extensive, JSON Schema-specified format of software source code test coverage information.
+An open, extensive, JSON Schema-specified format of software source code coverage information.
 
 ## Features
 
 * JSON as the underlying format
 * JSON Schema that fully specifies and describes the format
-* Programming language-agnostic format
+* Programming language and tool-agnostic format
 * Support for branch coverage information
 * No need of access to source code to render a nice-looking coverage report
 

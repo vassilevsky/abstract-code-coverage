@@ -1,4 +1,4 @@
-{"project": "foo", "revision": "abcd123", "files": [
+{"project": "foo", "revision": "abcd123", "tool": {"name": "RSpec", "version": "3"}, "files": [
     {"path": "src/main.go", "lines": [
         {"no": 1, "hits": 0},
         {"no": 2, "hits": 1},

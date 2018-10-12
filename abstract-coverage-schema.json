@@ -5,7 +5,8 @@
   "required": [
     "project",
     "revision",
-    "files"
+    "files",
+    "tool"
   ],
   "properties": {
     "project": {
@@ -20,6 +21,30 @@
       "type": "array",
       "description": "A list of project files with their coverage information",
       "items": {"$ref": "#/definitions/file"}
+    },
+    "tool": {
+      "type": "object",
+      "description": "The tool that was executed on the code and covered it",
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "examples": [
+            "RSpec",
+            "ExUnit"
+          ]
+        },
+        "version": {
+          "type": "string",
+          "examples": [
+            "1.0",
+            "2.2.5-pre"
+          ]
+        }
+      }
     }
   },
   "definitions": {
